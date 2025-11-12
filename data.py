@@ -6,7 +6,7 @@ def create_data():
     file = "tasks.json"
     try:
         with open(file, 'w') as tasks:
-            data = '{"id_counter": 1, "tasks": ["Write your first task."]}'
+            data = '{"id_counter": 1, "tasks": [{"id": 1, "label": "Write your first task"}]}'
             tasks.write(data)
         
         print(f"File '{file}' created successfully.")
