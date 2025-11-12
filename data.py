@@ -6,8 +6,8 @@ def create_data():
     file = "tasks.json"
     try:
         with open(file, 'w') as tasks:
-            data = {"id_counter": 1, "tasks": ["Write your first task."]}
-            tasks.write(json.dump(data))
+            data = '{"id_counter": 1, "tasks": ["Write your first task."]}'
+            tasks.write(data)
         
         print(f"File '{file}' created successfully.")
     except OSError as e:
